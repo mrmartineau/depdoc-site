@@ -1,0 +1,19 @@
+extends layout
+//- TODO:
+//- add buttons to download md file
+//- validate package.json [1/2]
+
+block content
+  h1 depdoc
+  p Paste in your package.json to generate some simple documentation
+  p Also available as an npm package <code>npm install depdoc -g</code>. See the page <a href='http://npmjs.org/depdoc'>on NPM</a> for more information.
+  div.g-row
+    div.g-col.g-span6
+      h2 Input
+      form(class='depdoc-submission',method='post',action='/depdoc')
+        textarea(class='packageInput',name='packageInput')
+        input(type='submit',value='Submit',class='submit')
+    div.g-col.g-span6
+      h2 Result
+      div.depdocResult
+      a(class='btn btn--primary downloadResult is-hidden', href='#') Download

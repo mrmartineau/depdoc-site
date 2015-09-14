@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			})
 			.error(function (data, xhr) {
 				resultContainer.innerHTML = 'Ooops.. there was a problem. We are working on it.';
+				console.log(xhr.response);
 			});
 	});
 

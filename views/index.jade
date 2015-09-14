@@ -4,16 +4,17 @@ extends layout
 //- validate package.json [1/2]
 
 block content
-  h1 depdoc
-  p Paste in your package.json to generate some simple documentation
-  p Also available as an npm package <code>npm install depdoc -g</code>. See the page <a href='http://npmjs.org/depdoc'>on NPM</a> for more information.
-  div.g-row
-    div.g-col.g-span6
-      h2 Input
+  div.masthead
+    h1.pageName depdoc
+    p Paste in your package.json to generate some simple documentation
+    p Also available as an npm package <code>npm install depdoc -g</code>. See the page <a href='http://npmjs.org/depdoc'>on NPM</a> for more information.
+  div.g-row.inputOutput
+    div.g-col.g-span6.section.section--input
+      h2.section-name Input
       form(class='depdoc-submission',method='post',action='/depdoc')
         textarea(class='packageInput',name='packageInput')
-        input(type='submit',value='Submit',class='submit')
-    div.g-col.g-span6
-      h2 Result
+        input(type='submit',value='Submit',class='submit btn btn--primary')
+    div.g-col.g-span6.section.section--output
+      h2.section-name Result
       div.depdocResult
-      a(class='btn btn--primary downloadResult is-hidden', href='#') Download
+      //- a(class='btn btn--primary downloadResult is-hidden', href='#') Download

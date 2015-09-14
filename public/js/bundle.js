@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/mrmartineau/htdocs/depdoc-site/node_modules/atomicjs/dist/atomic.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! atomicjs v1.1.0 | (c) 2015 @munkychop | github.com/munkychop/atomicjs */
 !function() {
     "use strict";
@@ -41,7 +41,7 @@
         return exports;
     }) : "undefined" != typeof module && module.exports ? module.exports = exports : window.atomic = exports;
 }();
-},{}],"/Users/mrmartineau/htdocs/depdoc-site/public/js/script.js":[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 var ajax = require('atomicjs');
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -73,4 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-},{"atomicjs":"/Users/mrmartineau/htdocs/depdoc-site/node_modules/atomicjs/dist/atomic.js"}]},{},["/Users/mrmartineau/htdocs/depdoc-site/public/js/script.js"]);
+},{"atomicjs":1}]},{},[2]);

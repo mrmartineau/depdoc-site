@@ -14,10 +14,10 @@ router.post('/depdoc', function(req, res, next) {
 	var result = depdoc(req.body, 'json');
 	// console.log(result);
 
-	fs.writeFile('depdoc.md', result, function (err) {
-		if (err) throw err;
-		console.log('It\'s saved!');
-	});
+	// fs.writeFile('depdoc.md', result, function (err) {
+	// 	if (err) throw err;
+	// 	console.log('It\'s saved!');
+	// });
 	// res.setHeader('content-type', 'text/x-markdown');
 	// res.setHeader('content-disposition', 'attachment; filename=depdoc.md');
 

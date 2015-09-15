@@ -15,7 +15,8 @@ module.exports.tasks = {
 			files: ['<%=config.css.scssDir%>/**/*.scss'],
 			tasks: [
 				'compileCSS',
-				'clean:tempCSS'
+				'clean:tempCSS',
+				'csso'
 			]
 		},
 

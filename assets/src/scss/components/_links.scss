@@ -3,6 +3,7 @@
  */
 a {
 	transition: $default-transition;
+	border-bottom: 2px solid;
 
 	&, &:link {
 		color: $color-link-default;

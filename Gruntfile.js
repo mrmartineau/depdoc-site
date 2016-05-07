@@ -74,8 +74,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('dev', [
 		'browserify:main',
 		'compileCSS',
-		'clean:tempCSS',
-		'images'
+		'clean:tempCSS'
 	]);
 
 

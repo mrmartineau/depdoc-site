@@ -6,7 +6,7 @@ var fs = require('fs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.render('index', { title: 'Express' });
+	res.render('index', { title: 'Depdoc - Auto-generate documentation using your package.json\'s dependencies property' });
 });
 
 /* POST returns depdoc. */

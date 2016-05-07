@@ -15,16 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		resultContainer.classList.add('is-loading');
 
 		var input = document.querySelector('.packageInput').value;
-		var normalisedInput = input.replace(/\r?\n|\s|\r/g,'');
 
-		ajax.post('/depdoc', normalisedInput, 'application/json')
+		ajax.post('/depdoc', input, 'application/json')
 			.success(function (data, xhr) {
 				resultContainer.classList.remove('is-loading');
 				resultContainer.innerText = xhr.response;
 			})
 			.error(function (data, xhr) {
 				resultContainer.innerHTML = 'Ooops.. there was a problem. We are working on it.';
-				console.log(xhr.response);
 			});
 	});
 
